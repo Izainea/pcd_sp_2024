@@ -16,7 +16,7 @@ st.write('Mi primer aplicativo para contratos')
 ## Selector de contratos, cargo datos de contratos desde sodapy y le permito al usuario escoger 
 ## un contrato a visualizar
 
-client = Socrata("www.datos.gov.co", APP_TOKEN)
+client = Socrata("www.datos.gov.co", None)
 
 Query = """
 select 
@@ -27,7 +27,7 @@ limit
 1000
 """
 
-results = client.get(DATASET_ID, query=Query)
+results = client.get('jbjy-vk9h', query=Query)
 
 df = pd.DataFrame.from_records(results)
 
