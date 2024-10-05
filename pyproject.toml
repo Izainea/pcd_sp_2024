@@ -5,6 +5,7 @@ description = "Mi primer proyecto cd"
 authors = ["izainea <cizaineam@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11"
@@ -14,6 +15,7 @@ numpy = "^1.26.4"
 matplotlib = "^3.9.0"
 seaborn = "^0.13.2"
 ucimlrepo = "^0.0.7"
+sodapy = "^2.2.0"
 
 
 [build-system]
